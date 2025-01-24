@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "视频速度控制器",
+  "version": "1.0",
+  "description": "按住快捷键临时调整视频播放速度",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+} 
