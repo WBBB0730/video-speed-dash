@@ -1,0 +1,51 @@
+{
+  "shortcutSpeed": {
+    "message": "按键 $KEY$ 的播放速度",
+    "description": "快捷键速度设置的标签",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "speedResetHint": {
+    "message": "松开按键将恢复正常播放速度",
+    "description": "速度重置行为的提示文本"
+  },
+  "shortcutKey": {
+    "message": "快捷键",
+    "description": "快捷键输入框标签"
+  },
+  "clickToEnterShortcut": {
+    "message": "点击输入快捷键",
+    "description": "快捷键输入框占位符"
+  },
+  "noShortcuts": {
+    "message": "还没有添加任何快捷键",
+    "description": "空状态提示"
+  },
+  "settingsSaved": {
+    "message": "设置已保存",
+    "description": "设置保存成功提示"
+  },
+  "addShortcut": {
+    "message": "添加快捷键",
+    "description": "添加快捷键按钮文本"
+  },
+  "save": {
+    "message": "保存",
+    "description": "保存按钮文本"
+  },
+  "extensionName": {
+    "message": "Video Speed Dash",
+    "description": "扩展名称"
+  },
+  "extensionTitle": {
+    "message": "Video Speed Dash 设置",
+    "description": "弹出窗口标题"
+  },
+  "extensionDescription": {
+    "message": "一个通过按住快捷键即时控制视频播放速度的浏览器扩展",
+    "description": "扩展描述"
+  }
+} 

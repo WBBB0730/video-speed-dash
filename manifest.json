@@ -1,17 +1,29 @@
 {
   "manifest_version": 3,
-  "name": "视频速度控制器",
+  "name": "__MSG_extensionName__",
   "version": "1.0",
-  "description": "按住快捷键临时调整视频播放速度",
+  "description": "__MSG_extensionDescription__",
   "permissions": ["storage"],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.bilibili.com/*",
+    "*://*.netflix.com/*",
+    "*://*.vimeo.com/*"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.bilibili.com/*",
+        "*://*.netflix.com/*",
+        "*://*.vimeo.com/*"
+      ],
       "js": ["content.js"]
     }
-  ]
-} 
+  ],
+  "default_locale": "en"
+}

@@ -1,0 +1,51 @@
+{
+  "shortcutSpeed": {
+    "message": "Speed for key $KEY$",
+    "description": "Label for shortcut speed setting",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "speedResetHint": {
+    "message": "Release the key to reset to normal speed",
+    "description": "Hint text for speed reset behavior"
+  },
+  "shortcutKey": {
+    "message": "Shortcut key",
+    "description": "Label for shortcut key input"
+  },
+  "clickToEnterShortcut": {
+    "message": "Click to enter shortcut",
+    "description": "Placeholder for shortcut key input"
+  },
+  "noShortcuts": {
+    "message": "No shortcuts added yet",
+    "description": "Empty state message"
+  },
+  "settingsSaved": {
+    "message": "Settings saved",
+    "description": "Toast message when settings are saved"
+  },
+  "addShortcut": {
+    "message": "Add Shortcut",
+    "description": "Add shortcut button text"
+  },
+  "save": {
+    "message": "Save",
+    "description": "Save button text"
+  },
+  "extensionName": {
+    "message": "Video Speed Dash",
+    "description": "The name of the extension"
+  },
+  "extensionTitle": {
+    "message": "Video Speed Dash Settings",
+    "description": "The title of the popup window"
+  },
+  "extensionDescription": {
+    "message": "A browser extension for instant video speed control with press-and-hold shortcuts",
+    "description": "The description of the extension"
+  }
+} 

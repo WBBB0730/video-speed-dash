@@ -1,0 +1,51 @@
+{
+  "shortcutSpeed": {
+    "message": "按鍵 $KEY$ 的播放速度",
+    "description": "快捷鍵速度設置的標籤",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "speedResetHint": {
+    "message": "放開按鍵將恢復正常播放速度",
+    "description": "速度重置行為的提示文本"
+  },
+  "shortcutKey": {
+    "message": "快捷鍵",
+    "description": "快捷鍵輸入框標籤"
+  },
+  "clickToEnterShortcut": {
+    "message": "點擊輸入快捷鍵",
+    "description": "快捷鍵輸入框佔位符"
+  },
+  "noShortcuts": {
+    "message": "還沒有添加任何快捷鍵",
+    "description": "空狀態提示"
+  },
+  "settingsSaved": {
+    "message": "設置已保存",
+    "description": "設置保存成功提示"
+  },
+  "addShortcut": {
+    "message": "添加快捷鍵",
+    "description": "添加快捷鍵按鈕文本"
+  },
+  "save": {
+    "message": "保存",
+    "description": "保存按鈕文本"
+  },
+  "extensionName": {
+    "message": "Video Speed Dash",
+    "description": "擴展名稱"
+  },
+  "extensionTitle": {
+    "message": "Video Speed Dash 設置",
+    "description": "彈出窗口標題"
+  },
+  "extensionDescription": {
+    "message": "一個通過按住快捷鍵即時控制視頻播放速度的瀏覽器擴展",
+    "description": "擴展描述"
+  }
+} 
