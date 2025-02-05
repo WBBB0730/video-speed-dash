@@ -2,6 +2,7 @@ import fs from 'fs-extra'
 import type { Manifest } from 'webextension-polyfill'
 import type PkgType from '../package.json'
 import { isDev, isFirefox, port, r } from '../scripts/utils'
+import { defaultLocale } from '~/i18n'
 
 export async function getManifest() {
   const pkg = await fs.readJSON(r('package.json')) as typeof PkgType
@@ -13,8 +14,9 @@ export async function getManifest() {
     name: pkg.displayName || pkg.name,
     version: pkg.version,
     description: pkg.description,
+    default_locale: defaultLocale,
     action: {
-      default_icon: './assets/icon-512.png',
+      default_icon: './assets/icon.png',
       default_popup: './dist/popup/index.html',
     },
     options_ui: {
@@ -30,15 +32,14 @@ export async function getManifest() {
           service_worker: './dist/background/index.mjs',
         },
     icons: {
-      16: './assets/icon-512.png',
-      48: './assets/icon-512.png',
-      128: './assets/icon-512.png',
+      16: './assets/icon.png',
+      48: './assets/icon.png',
+      128: './assets/icon.png',
     },
     permissions: [
       'tabs',
       'storage',
       'activeTab',
-      'sidePanel',
     ],
     host_permissions: ['*://*/*'],
     content_scripts: [
@@ -63,19 +64,6 @@ export async function getManifest() {
         ? `script-src \'self\' http://localhost:${port}; object-src \'self\'`
         : 'script-src \'self\'; object-src \'self\'',
     },
-  }
-
-  // add sidepanel
-  if (isFirefox) {
-    manifest.sidebar_action = {
-      default_panel: 'dist/sidepanel/index.html',
-    }
-  }
-  else {
-    // the sidebar_action does not work for chromium based
-    (manifest as any).side_panel = {
-      default_path: 'dist/sidepanel/index.html',
-    }
   }
 
   // FIXME: not work in MV3
